@@ -45,4 +45,4 @@ try:
         print('There is no solution')
         
 except:
-    print(c.RED + c.BOLD + 'ERROR' + c.EOC + c.BOLD)
+    exit(1)
