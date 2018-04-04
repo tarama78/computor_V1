@@ -104,7 +104,14 @@ class Equation(object):
             print(c.RED + c.BOLD + 'ERROR:' + c.EOC + c.BOLD +
                     ' invalid char in line')
             exit(1)
-
+        nb_equal = 0
+        for ch in self.eq:
+            if ch == '=':
+                nb_equal += 1
+        if nb_equal > 1:
+            print(c.RED + c.BOLD + 'ERROR:' + c.EOC + c.BOLD +
+                    ' multiple \'=\'')
+            exit(1)
 
 ###
     def initPart(self, part, tab):
