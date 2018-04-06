@@ -43,7 +43,6 @@ try:
         print('All real numbers are solutions')
     else:
         print('There is no solution')
-
 except Exception:
     print(c.RED + c.BOLD + 'ERROR:' + c.EOC + c.BOLD + ' invalid line')
     exit(1)

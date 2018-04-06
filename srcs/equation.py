@@ -49,7 +49,12 @@ class Equation(object):
             self.result = []
             self.possible = 0
         elif delta == 0:
-            self.result = [-b / (2 * a)]
+            try:
+                self.result = [-b / (2 * a)]
+            except ZeroDivisionError:
+                self.result = []
+                self.possible = 0
+                return
             if self.result[0] == -0:
                 self.result[0] = 0
         else:
@@ -160,7 +165,7 @@ class Equation(object):
 ###
     def getVal(self, val, sign):
         res = 1.0
-        
+
         i = 0
         finish = 0
         while i < len(val):
