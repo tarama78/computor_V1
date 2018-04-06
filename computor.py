@@ -45,6 +45,5 @@ try:
         print('There is no solution')
 
 except Exception:
-    print(sys.exc_info()[0])
     print(c.RED + c.BOLD + 'ERROR:' + c.EOC + c.BOLD + ' invalid line')
     exit(1)
