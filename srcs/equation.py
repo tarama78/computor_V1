@@ -71,7 +71,6 @@ class Equation(object):
 ##### parser
     def initVal(self):
         self.tejErr()
-#        tmp = self.eq.replace(' ', '').replace('\t', '').replace('\n', '')
         tmp = self.eq
         tab = []
 
